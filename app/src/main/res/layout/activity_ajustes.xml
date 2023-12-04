@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btpares"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorDarkGreen"
+    android:backgroundTint="#0F5108"
+    android:foregroundTint="#8F1A1A"
+    tools:context=".Configuracion">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#2E3C3C"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:backgroundTint="#FFFFFF"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#307DCF"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Configuracion"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llAjustes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:background="#000000"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <EditText
+                android:id="@+id/nombreJugador"
+                android:layout_width="250dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:background="#FFFFFF"
+                android:hint="Nombre para jugador"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:textColor="#000000"
+                android:textColorHint="#2A3640" />
+
+            <EditText
+                android:id="@+id/editTextText"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="52sp"
+                android:layout_marginTop="5sp"
+                android:ems="10"
+                android:inputType="text"
+                android:text="Dime el numero de tiradas"
+                android:textColor="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/numeroTiradas"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal"
+                android:background="#FFFFFF"
+                android:backgroundTint="#FFFFFF"
+                android:hint="Tiradas"
+                android:inputType="number"
+                android:paddingLeft="10dp"
+                android:textColor="#000000"
+                android:textColorHint="#2A3640" />
+
+            <Switch
+                android:id="@+id/switchCartaONumero"
+                android:layout_width="200dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:text="Dados estaticos"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/textViewGustoJuego"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:text="¿Te gusta el juego?"
+                android:textColor="#FFFFFF" />
+
+            <Spinner
+                android:id="@+id/spinnerGustoJuego"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:background="#FFFFFF"
+                android:paddingLeft="10dp"
+                android:textColor="#000000"
+                android:textColorHint="#2A3640" />
+
+            <Button
+                android:id="@+id/btnGuardarConfiguracion"
+                android:layout_width="273dp"
+                android:layout_height="64dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#045A12"
+                android:text="Guardar Configuración"
+                android:textColor="#FFFFFF"
+                app:cornerRadius="3sp" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp">
+
+                <RadioButton
+                    android:id="@+id/radioButton"
+                    android:layout_width="84dp"
+                    android:layout_height="match_parent"
+                    android:text="chico"
+                    android:textColor="@color/colorBlue" />
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="88dp"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/colorGreen"
+                    android:text="chica"
+                    android:textColor="@color/colorDarkGreen"
+
+                    />
+            </RadioGroup>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

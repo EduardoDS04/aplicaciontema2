@@ -1,0 +1,19 @@
+<resources>
+    <string-array name="listaChistes">
+        <item>¿Cómo va Batman a su funeral? Batieso.</item>
+        <item> ¿Cuál es la diferencia entre un político y un mentiroso? La longitud de su nariz... y la cantidad de años que llevan en el cargo.</item>
+        <item>¿Por qué los políticos nunca miran por la ventana por la mañana? Porque la mayoría de las decisiones equivocadas se toman por la noche.</item>
+        <item>¿Cómo se llama el hermano vegano de Bruce Lee? Broco Lee.</item>
+        <item>¿Cuál es el colmo de una azafata? Enamorarse del piloto automático.</item>
+        <item>¿Cómo queda un mago después de comer? Magordito.</item>
+        <item>¿Quién es el padre de ET?. Donette.</item>
+        <item>¿Por qué el mar no se seca? Porque no tiene toalla.</item>
+        <item>El otro día vendí mi aspiradora. Lo único que hacía era acumular polvo.</item>
+        <item>¿De dónde sale la porcelana? De las porceovejas.</item>
+    </string-array>
+    <style name="ButtonStyle" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:background">@color/colorDarkGreen</item>
+    </style>
+
+
+</resources>

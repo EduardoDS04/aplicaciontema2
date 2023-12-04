@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2B2B2B"
+    tools:context=".Dados">
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="290dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="16dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dado" />
+
+    <TextView
+        android:id="@+id/resultadoText"
+        android:layout_width="354dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="192dp"
+        android:layout_marginEnd="28dp"
+        android:text="0"
+        android:textColor="@color/white"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageButton" />
+
+    <ImageView
+        android:id="@+id/imagview_dado1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/imagview_dado2"
+        app:layout_constraintTop_toBottomOf="@+id/imagview_dado2"
+        app:srcCompat="@drawable/dado1" />
+
+    <ImageView
+        android:id="@+id/imagview_dado2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="116dp"
+        android:layout_marginEnd="172dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/resultadoText"
+        app:srcCompat="@drawable/dado1" />
+
+    <ImageView
+        android:id="@+id/imagview_dado3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        app:layout_constraintEnd_toEndOf="@+id/imagview_dado1"
+        app:layout_constraintTop_toTopOf="@+id/imagview_dado1"
+        app:srcCompat="@drawable/dado1" />
+
+    <Button
+        android:id="@+id/atras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="296dp"
+        android:layout_marginTop="108dp"
+        android:text="Atras"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagview_dado3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
